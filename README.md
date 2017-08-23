@@ -36,3 +36,33 @@ Ainda, foi catalogada a seguinte relação entre os dados levantados:
 ## Modelo dos dados
 
 Com base nas informações descritas acima, foi pedido que você gere os diagramas DER e DR do sistema bibliotecário. Para o DER use o software [TerraER](http://www.terraer.com.br/). Já para o diagrama DR, utilize o [MySQL Workbench](https://www.mysql.com/products/workbench/).
+
+## Trabalhando com a linguagem SQL
+
+### Criando a estrutura do banco de dados
+
+Agora que o modelo do sistema está pronto, é hora de criar sua estrutura no SGBD!! Utilize os comandos aprendidos na aula para criar a estrutura do banco de dados. Você deverá entregar os scripts SQL utilizados para criação do banco.
+
+### Inserindo novos registros
+
+Popule o banco de dados com **informações reais** de bibliotecas, livros, exemplares, usuários e empréstimos. Seu banco de dados deverá ter, pelo menos:
+
+* 4 bibliotecas
+* 10 usuários
+* 3 livros
+* 10 exemplares
+* 8 empréstimos
+
+### Realizando consultas no SGBD
+
+Com os dados cadastrados, implemente o código SQL que realize as consultas abaixo:
+
+1. Listar o nome de todas as bibliotecas
+1. Listar o nome de todos os usuários do curso de informática
+1. Listar o nome e autor dos livros de computação
+1. Listar os exemplares que foram publicados após os anos de 2010
+1. Listar os exemplares cadastrados na biblioteca central
+1. Listar todos os empréstimos realizados pelo usuário 'João'
+1. Listar os empréstimos de 'João' feitos na biblioteca central
+1. Listar o nome dos exemplares que foram emprestados pelo menos uma vez (procure saber sobre o comando DISTINCT)
+1. Listar as bibliotecas  que realizarem empréstimos pelo menos uma vez (procure saber sobre o comando DISTINCT)
