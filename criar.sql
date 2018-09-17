@@ -42,6 +42,6 @@ CREATE TABLE emprestimo(
   idBiblioteca INT NOT NULL,
   idExemplar INT NOT NULL,
   CONSTRAINT fk_emprestimo_usuario FOREIGN KEY (idUsuario) REFERENCES usuario(id),
-  CONSTRAINT fk_emprestimo_biblioteca FOREIGN KEY (idLivro) REFERENCES bibliotecas(id),
+  CONSTRAINT fk_emprestimo_biblioteca FOREIGN KEY (idBiblioteca) REFERENCES bibliotecas(id),
   CONSTRAINT fk_emprestimo_exemplar FOREIGN KEY (idExemplar) REFERENCES exemplar(id)
 );
